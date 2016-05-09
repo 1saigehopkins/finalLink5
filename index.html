@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Belly Fold Portal</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="http://cooper-union-maps-proxy.herokuapp.com/js/draw.js"></script>
+
+    <script>
+
+      $(document).ready(function(){
+
+        var mapOptions = {
+          zoom: 16,
+          center: new google.maps.LatLng(-19.265793, -68.511692),
+          mapTypeId: google.maps.MapTypeId.SATELLITE
+        };
+
+        var positions = [
+          {
+            'title':'Big Shade',
+            'map':new google.maps.LatLng(-19.265793, -68.511692),
+            'link':'https://www.youtube.com/watch?v=JOJC-nFdEEM'
+          }
+
+        ];
+
+        draw('map', mapOptions, positions);
+      });
+
+      // google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
+    <style>
+
+
+      #map {
+        display: flex;
+        align-items: flex-start;
+        height:800px;
+        width:800px;
+        margin-left: 500px;
+        margin-top: 10px;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+
+      }
+
+      h1 {
+        width:430px;
+        font-size: 2em;
+        color: black;
+        font-family: helvetica;
+      }
+
+      h2 {
+        width:430px;
+        font-size: 1em;
+        color: black;
+        font-family: helvetica;
+      }
+
+      body {
+        background-image: url(http://www.publicdomainpictures.net/download-picture.php?adresar=130000&soubor=underwater-blank-scenery.jpg&id=121705);
+        background-size: cover;
+        background-position: center;
+      }
+
+      p {
+        text-align: right;
+        font-size: 1em;
+        color: white;
+        font-family: helvetica;
+      }
+
+      div {
+
+      }
+                          /*phone format*/
+      @media all and (min-width:320px) and (max-width:460px) {
+
+	body {
+		font-size:1em;
+		background-color:orange;
+    background-image:url(https://scontent-iad3-1.xx.fbcdn.net/t31.0-8/13131211_1070044243066785_5190568253987008896_o.jpg);
+    background-size: cover;
+    width: 280px;
+
+	}
+
+  #map {
+    display: flex;
+    align-items: flex-start;
+    height:270px;
+    width:300px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 30px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  h1 {
+    width:320px;
+    font-size: 2em;
+    color: black;
+    font-family: helvetica;
+  }
+
+  #mystery {
+    color: white;
+  }
+
+  h2 {
+    width:250px;
+    font-size: 1.5em;
+    color: black;
+    font-family: helvetica;
+  }
+
+  p {
+    text-align: left;
+    font-size: 1em;
+    color: white;
+    font-family: helvetica;
+  }
+
+
+	}
+
+    </style>
+
+  </head>
+
+  <body>
+    <section>
+      <h1> WASHED AWAY in a sour tuck through space.</h1>
+      <h2> Your loved ones, your shoots, your ant hill, they are all gone. You're scaley princess sipping air bubbles.</h2>
+    </section>
+    <div id="map"></div>
+    <div id="mystery"><p>what is this? what is going to happen over here? is everything going to
+       be OK? are you going to be a legend? a success? You can effin do it all baby!!!!!</p></div>
+  </body>
+</html>
